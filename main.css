@@ -14,7 +14,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Header and Navbar */
+/*====== Header and Navbar ======*/
 .header {
     position: fixed;
     top: 0;
@@ -75,7 +75,7 @@ body {
     z-index: 9999;
 }
 
-/* Banner */
+/*====== Banner ======*/
 .main-container {
     background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #232323);
     height: 100vh;
@@ -98,12 +98,7 @@ body {
     max-width: 600px;
 }
 
-.content .greeting {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
+.content .greeting ,
 .content .name {
     font-size: 2rem;
     font-weight: bold;
@@ -160,7 +155,7 @@ body {
     transform: translateY(10%);
 }
 
-/* About Section */
+/*====== About Section ======*/
 .about-me {
     min-height: 100vh;
     display: flex;
@@ -229,7 +224,7 @@ body {
     min-height: 300px;
 }
 
-/* Services Section */
+/*====== Services Section ======*/
 .service {
     min-height: 70vh;
     background-color: white;
@@ -288,7 +283,7 @@ body {
     padding: 0 10px;
 }
 
-/* Projects Section */
+/*====== Projects Section ======*/
 .projects {
     background-color: white;
     text-align: center;
@@ -403,7 +398,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Contact Section */
+/*====== Contact Section ======*/
 .contact-container {
     display: flex;
     align-items: center;
@@ -473,7 +468,7 @@ body {
     color: #fff;
 }
 
-/* Media Queries */
+/*====== Media Queries ======*/
 @media (max-width: 1024px) {
     .content {
         max-width: 500px;

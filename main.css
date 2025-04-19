@@ -559,6 +559,25 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .image-container {
+        position: relative;
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+        bottom: 0;
+        align-items: flex-end;
+    }
+
+    .main-container {
+        padding-bottom: 0;
+    }
+
+    .image-container img {
+        transform: none;
+    }
+}
+
 @media (max-width: 576px) {
     .header {
         flex-direction: column;

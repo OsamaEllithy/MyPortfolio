@@ -672,15 +672,3 @@ body {
         min-width: 240px;
     }
 }
-@media (max-width: 768px) {
-    .image-container {
-        right: auto;
-        position: relative;
-        margin: 30px auto;
-        transform: none;
-    }
-    
-    .image-container img {
-        transform: none;
-    }
-}

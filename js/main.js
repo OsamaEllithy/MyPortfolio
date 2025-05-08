@@ -96,8 +96,15 @@ const modalTitle = document.getElementById("modalTitle");
 const modalDescription = document.getElementById("modalDescription");
 const closeBtn = document.querySelector(".close-btn");
 
-const descriptions = ['A modern landing page for an e-commerce website with clean layout and user-focused design.', 'Homepage for a digital innovation platform highlighting features and value propositions.', 'A clean and interactive JavaScript Calculator performing basic arithmetic operations with a user-friendly interface.', 'Makeup product showcase website featuring a responsive, aesthetic UI for beauty products.', "A tourism landing page allowing users to explore, book, and learn about Egypt's attractions.", 'Library system demo project illustrating clean, maintainable code structure and UI.', 'Signup page designed for an innovation platform focusing on UX and visual appeal.', 'A WordPress-based academic LMS with full course management and student interaction tools.'];
-const titles = ['E-Commerce Landing Page', 'Digital Platform Homepage', 'JavaScript Calculator', 'Trendy Makeup Shop UI', 'Tourism Landing Page', 'Library System Showcase', 'SignUp Page UI', 'Academic LMS Platform'];
+const descriptions = ['A modern landing page for an e-commerce website with clean layout and user-focused design.',
+    'Homepage for a digital innovation platform highlighting features and value propositions.',
+    'A clean and interactive JavaScript Calculator performing basic arithmetic operations with a user-friendly interface.',
+    "A tourism landing page allowing users to explore, book, and learn about Egypt's attractions.",
+    'A simple C++ library system that applies clean code principles for managing books, users, and borrowing records with modular, readable, and maintainable structure.',
+    'Signup page designed for an innovation platform focusing on UX and visual appeal.',
+    'A WordPress-based academic LMS with full course management and student interaction tools.' ,
+    'A simple JavaScript project that uses dynamic cards to display, edit, and delete product information. Designed for easy product management with a clean and interactive UI.'];
+const titles = ['E-Commerce Landing Page', 'Digital Platform Homepage', 'JavaScript Calculator', 'Tourism Landing Page', 'Library Manager - Clean C++', 'SignUp Page UI', 'Academic LMS Platform' , 'CURDS operations JavaScript'];
 
 document.querySelectorAll(".collection-card button").forEach((btn, index) => {
     btn.addEventListener("click", () => {
@@ -118,3 +125,36 @@ window.addEventListener("click", (e) => {
         modal.style.display = "none";
     }
 });
+
+// ============= Animation =========== //
+
+window.addEventListener('load', () => {
+    const image = document.querySelector('.image-container');
+    const contentLines = document.querySelectorAll('.content > *');
+
+    if (image) {
+        image.classList.add('visible');
+    }
+
+    contentLines.forEach((line, index) => {
+        setTimeout(() => {
+            line.classList.add('visible');
+        }, 1200 + index * 500);
+    });
+});
+
+const serviceCards = document.querySelectorAll('.categories-container .category');
+
+const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.classList.add('visible');
+            }, index * 650);
+            obs.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.2
+});
+serviceCards.forEach(card => observer.observe(card));

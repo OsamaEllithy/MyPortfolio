@@ -6,29 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolio | Osama .A Frontend & Mobile App Developer</title>
     <link rel="icon" href="./image/icon.png" type="image.png">
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <!-- Start Banner -->
     <div class="main-container" id="Home">
-        <div class="header">
-            <h1 class="logo">Osama A</h1>
-            <div class="nav">
-                <a href="#Home">Home</a>
-                <a href="#About">About</a>
-                <a href="#Service">Services</a>
-                <a href="#Portfolio">portfolio</a>
-                <a href="#ContactUs">Contact</a>
-                <i id="phone-icon" class="fas fa-phone"></i>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Osama A</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#Home">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#About">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#Service">Services</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#Portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#ContactUs">Contact</a></li>
+                <li class="nav-item">
+                    <i id="phone-icon" class="fas fa-phone nav-link text-white"></i>
+                </li>
+                </ul>
             </div>
-            <div id="copy-toast">Phone number copied to clipboard!</div>
-        </div>
+            </div>
+                <div id="copy-toast">Phone number copied to clipboard!</div>
+        </nav>
 
         <div class="content">
             <div class="greeting">Hello friend!</div>
             <div class="name">I'm Osama Abdelnaser</div>
-            <div class="availability">available for work.</div>
-            <a href="#About" class="button">Let's begin</a>
+            <div class="text-primary" id="availability">available for work.</div>
+            <a href="#About" id="content-btn" class="btn btn-primary w-50">Let's begin</a>
         </div>
 
         <div class="image-container">
@@ -47,7 +58,7 @@
                     I enjoy building modern and responsive web interfaces using tools like React.
                     Feel free to check out my portfolio and projects to learn more about me!
                 </p>
-                <a href="#ContactUs" class="btn">Learn More</a>
+                <a href="#ContactUs" id="about-btn" class="btn btn-primary">Learn More</a>
             </div>
             <div id="lottie" class="lottie-animation"></div>
         </div>
@@ -104,7 +115,7 @@
                         <img src="./image/Landing-page1.png" alt="image">
                         <div class="card-content">
                             <h3>E-commerce Landing page</h3>
-                            <button>View Details</button>
+                            <button class="btn btn-primary">View Details</button>
                         </div>
                     </div>
                     <!-- Card 2 -->
@@ -112,55 +123,55 @@
                         <img src="./image/Digital Innovation Platform.png" alt="image">
                         <div class="card-content">
                             <h3>Digital Platform Homepage</h3>
-                            <button>View Details</button>
+                            <button class="btn btn-primary">View Details</button>
                         </div>
                     </div>
                     <!-- Card 3 -->
                     <div class="collection-card">
                         <img src="./image/calc-using-JS.png" alt="image">
                         <div class="card-content">
-                            <h3>Java Script Calculator</h3>
-                            <button>View Details</button>
+                            <h3>JavaScript Calculator</h3>
+                            <button class="btn btn-primary">View Details</button>
                         </div>
                     </div>
                     <!-- Card 4 -->
                     <div class="collection-card">
-                        <img src="./image/Landing-page2.png" alt="image">
+                        <img src="./image/Landing-page3.png" alt="image">
                         <div class="card-content">
-                            <h3>Trendy Makeup for Girls(Landing Page)</h3>
-                            <button>View Details</button>
+                            <h3>Tourism Landing Page</h3>
+                            <button class="btn btn-primary">View Details</button>
                         </div>
                     </div>
                     <!-- Card 5 -->
                     <div class="collection-card">
-                        <img src="./image/Landing-page3.png" alt="image">
+                        <img src="./image/code.png" alt="image">
                         <div class="card-content">
-                            <h3>Website to View, Book and Visit Egypt's Tourist Attractions</h3>
-                            <button>View Details</button>
+                            <h3>Library Manager - Clean C++</h3>
+                            <button class="btn btn-primary">View Details</button>
                         </div>
                     </div>
                     <!-- Card 6 -->
                     <div class="collection-card">
-                        <img src="./image/code.png" alt="image">
+                        <img src="./image/SignUp-page.png" alt="image">
                         <div class="card-content">
-                            <h3>Library System Project Shows Clean Code Form</h3>
-                            <button>View Details</button>
+                            <h3>SignUp-page (Digital Innovation Platform)</h3>
+                            <button class="btn btn-primary">View Details</button>
                         </div>
                     </div>
                     <!-- Card 7 -->
                     <div class="collection-card">
-                        <img src="./image/SignUp-page.png" alt="image">
-                        <div class="card-content">
-                            <h3>SignUp-page (Digital Innovation Platform)</h3>
-                            <button>View Details</button>
+                    <img src="./image/wordpress.png" alt="image">
+                    <div class="card-content">
+                        <h3>Academic LMS Platform (Wordpress)</h3>
+                        <button class="btn btn-primary">View Details</button>
                         </div>
                     </div>
                     <!-- Card 8 -->
                     <div class="collection-card">
-                    <img src="./image/wordpress.png" alt="image">
+                    <img src="./image/CURDS.png" alt="image">
                     <div class="card-content">
-                        <h3>Academic LMS Platform with Course Management</h3>
-                        <button>View Details</button>
+                        <h3>CURDS operations JavaScript</h3>
+                        <button class="btn btn-primary">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -199,9 +210,9 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

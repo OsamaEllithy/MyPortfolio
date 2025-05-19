@@ -57,14 +57,14 @@ document.addEventListener('DOMContentLoaded', function () {
         path: 'https://assets6.lottiefiles.com/packages/lf20_qp1q7mct.json'
     });
 
-    emailjs.init("MrcZLQBbWMJOhWoAd");
+    emailjs.init("gY5AMjqFRudW68mvX");
 
     const form = document.getElementById("contact-form");
     if (form) {
         form.addEventListener("submit", function (e) {
             e.preventDefault();
 
-            emailjs.sendForm("service_lgai73o", "template_364bdal", form)
+            emailjs.sendForm("service_wdob337", "template_jxqg9jy", form)
                 .then(function () {
                     alert("✅ Your message has been sent successfully. Thank you!");
                     form.reset();

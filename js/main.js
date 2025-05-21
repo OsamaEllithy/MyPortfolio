@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const phoneIcon = document.getElementById("phone-icon");
     if (phoneIcon) {
         phoneIcon.addEventListener("click", function () {
-            const phoneNumber = "+2001203494855";
+            const phoneNumber = "+201203494855";
             navigator.clipboard.writeText(phoneNumber).then(() => {
                 const toast = document.getElementById("copy-toast");
                 toast.style.opacity = 1;
@@ -103,8 +103,9 @@ const descriptions = ['A modern landing page for an e-commerce website with clea
     'A simple C++ library system that applies clean code principles for managing books, users, and borrowing records with modular, readable, and maintainable structure.',
     'Signup page designed for an innovation platform focusing on UX and visual appeal.',
     'A WordPress-based academic LMS with full course management and student interaction tools.' ,
-    'A simple JavaScript project that uses dynamic cards to display, edit, and delete product information. Designed for easy product management with a clean and interactive UI.'];
-const titles = ['E-Commerce Landing Page', 'Digital Platform Homepage', 'JavaScript Calculator', 'Tourism Landing Page', 'Library Manager - Clean C++', 'SignUp Page UI', 'Academic LMS Platform' , 'CURDS operations JavaScript'];
+    'A simple JavaScript project that uses dynamic cards to display, edit, and delete product information. Designed for easy product management with a clean and interactive UI.',
+    'Afia is a modern food website built using HTML, CSS, JavaScript, and Bootstrap. It focuses on promoting and selling healthy meals through a clean, responsive, and user-friendly design. The site includes dynamic components, animated sections, and an attractive layout to highlight fresh and nutritious food options.'];
+const titles = ['E-Commerce Landing Page', 'Digital Platform Homepage', 'JavaScript Calculator', 'Tourism Landing Page', 'Library Manager - Clean C++', 'SignUp Page UI', 'Academic LMS Platform' , 'CURDS operations JavaScript' , 'Afiaa — Healthy food, happy life.'];
 
 document.querySelectorAll(".collection-card button").forEach((btn, index) => {
     btn.addEventListener("click", () => {
